@@ -236,7 +236,7 @@ static void window_load(Window *window) {
 	layer_add_child(window_layer, bitmap_layer_get_layer(icon_layer));
 
 	bg_layer = text_layer_create(GRect(0, 0, 83, 40));
-	text_layer_set_text_color(bg_layer, GColorClear);
+	text_layer_set_text_color(bg_layer, GColorWhite);
 	text_layer_set_background_color(bg_layer, GColorBlack);
 	text_layer_set_font(bg_layer, fonts_get_system_font(FONT_KEY_BITHAM_34_MEDIUM_NUMBERS));
 	text_layer_set_text_alignment(bg_layer, GTextAlignmentLeft);
@@ -246,7 +246,7 @@ static void window_load(Window *window) {
 
 
 	readtime_layer = text_layer_create(GRect(0, 40, 144, 22));
-	text_layer_set_text_color(readtime_layer, GColorClear);
+	text_layer_set_text_color(readtime_layer, GColorWhite);
 	text_layer_set_background_color(readtime_layer, GColorBlack);
 	text_layer_set_font(readtime_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
 	text_layer_set_text_alignment(readtime_layer, GTextAlignmentCenter);
@@ -265,8 +265,8 @@ static void window_load(Window *window) {
 	
 
 	bg_2_layer = text_layer_create(GRect(0, 84, 144, 40));
-	text_layer_set_text_color(bg_2_layer, GColorBlack);
-	text_layer_set_background_color(bg_2_layer, GColorWhite);
+	text_layer_set_text_color(bg_2_layer, GColorWhite);
+	text_layer_set_background_color(bg_2_layer, GColorBlack);
 	text_layer_set_font(bg_2_layer, fonts_get_system_font(FONT_KEY_BITHAM_34_MEDIUM_NUMBERS));
 	text_layer_set_text_alignment(bg_2_layer, GTextAlignmentLeft);
 	layer_add_child(window_layer, text_layer_get_layer(bg_2_layer));
@@ -278,15 +278,15 @@ static void window_load(Window *window) {
 
 
 	readtime_2_layer = text_layer_create(GRect(0, 124, 144, 22));
-	text_layer_set_text_color(readtime_2_layer, GColorBlack);
-	text_layer_set_background_color(readtime_2_layer, GColorClear);
+	text_layer_set_text_color(readtime_2_layer, GColorWhite);
+	text_layer_set_background_color(readtime_2_layer, GColorBlack);
 	text_layer_set_font(readtime_2_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
 	text_layer_set_text_alignment(readtime_2_layer, GTextAlignmentCenter);
 	layer_add_child(window_layer, text_layer_get_layer(readtime_2_layer));
 
 	name_2_layer = text_layer_create(GRect(0, 146, 144, 22));
-	text_layer_set_text_color(name_2_layer, GColorBlack);
-	text_layer_set_background_color(name_2_layer, GColorWhite);
+	text_layer_set_text_color(name_2_layer, GColorWhite);
+	text_layer_set_background_color(name_2_layer, GColorBlack);
 	text_layer_set_font(name_2_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
 	text_layer_set_text_alignment(name_2_layer, GTextAlignmentCenter);
 	layer_add_child(window_layer, text_layer_get_layer(name_2_layer));
